@@ -1,0 +1,38 @@
+.modelos{
+	
+	background-color: blue;
+	width: 100px;
+	height: 51px;
+	margin: 10px;
+	float: left;
+	display: inline;
+	cursor: pointer;
+}	
+
+
+.telas-miniatura{
+	
+	background-color: #bdc3c7;
+	width: 100px;
+	height: 51px;
+	margin: 10px;
+	float: left;
+	display: inline;
+	cursor: pointer;
+}	
+
+.containers{
+
+	display: block;
+	float: left;
+
+}
+
+.conteudos-telas{
+	display: none;
+}
+
+/*Ajueste recurso Edson*/
+#telas{
+	margin-top: 20px !important;
+}
