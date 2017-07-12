@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 <title>STB Builder 2</title>
 </head>
 <body>
@@ -137,6 +138,11 @@
 }
 </style>
 <script>
+$(document).ready(function(){
+
+$.ajaxSetup({cache: false});
+
+});
 	
 	$( ".modelos" ).draggable({ revert: true });
     $(".telas-miniatura").droppable({  
@@ -156,5 +162,20 @@
 
 
 </script>
+
+
+<!-- Dependencias CaptiEdson Se possível remover as de SCO depois-->
+    <link rel="stylesheet" href="plugins/captiedson/bootstrap/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="plugins/captiedson/estilos.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="plugins/captiedson/simulacao.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="plugins/captiedson/animacoes.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="plugins/captiedson/animacoes-evento.min.css" type="text/css" media="all" />
+    <script src="plugins/captiedson/bootstrap/js/bootstrap.min.js"></script>
+	<script src="plugins/captiedson/APIWrapper.min.js"></script>
+    <script src="plugins/captiedson/SCOFunctions.min.js"></script>
+    <script src="plugins/captiedson/script.min.js"></script>
+    <script src="plugins/captiedson/configuracoes.js"></script>
+    
+    <!-- Fim das dependências -->
 
 </html>
