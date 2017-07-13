@@ -7,12 +7,25 @@ for(i=1; i<30; i++){
 
 //Gera uma tela 0
 telas[0] = new Tela(0);
-
+telas[0].modelo ="kkkk";
 //Gera as demais telas
 function Tela(numero) {
 this.numero = numero;
 this.modelo ="vazio";
-this.conteudo = "vazio";
+this.tipo ="vazio";
+this.componente1 = "vazio";
+this.componente2 = "vazio";
+this.componente3 = "vazio";
+this.componente4 = "vazio";
+this.componente5 = "vazio";
+this.orientacoes = "vazio";
+this.descricaoIMG = "vazio";
+this.img1 = "vazio";
+this.img2 = "vazio";
+this.img3 = "vazio";
+this.img4 = "vazio";
+this.img5 = "vazio";
+this.audio = "vazio";
 this.preenchimento = false;
 }
 //
@@ -46,22 +59,28 @@ this.preenchimento = false;
     telas[droppableId].preenchimento = true;
     /***** Necessário completar com o preenhcimento depois"*/////
 
-  	
+  	/* Preenche a tela de conteúdo escolhida  */
     var telaDeConteudoEscolhida = "#tela-conteudo-"+droppableId;
     $(telaDeConteudoEscolhida).load(modeloEscolhido);
 
     console.log(telaEscolhidoMiniatura);
-       }
+     }
 
 	});
 
-$(".telas-miniatura").click(function(){abreModal()});
+$(".telas-miniatura").click(function(){
+  var idDoClicado = $(this).attr('id').substring(15,17);
+  abreModal(idDoClicado);
+  });
 
-  function abreModal()
+
+ function abreModal(idDoClicado)
     {
+
+      var elementoEscolhido = '#tela-conteudo-'+idDoClicado;
         // note the use of "this" rather than a function argument
         $.fancybox({
-        'href'   : '#tela-conteudo-1',
+        'href': elementoEscolhido,
         'width' : '100%',
         'height' :'100%',
         'titleShow'  : false,
@@ -78,9 +97,6 @@ $(".telas-miniatura").click(function(){abreModal()});
     return false;
 
 }
-
-
-
 
 
 

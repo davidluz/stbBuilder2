@@ -36,3 +36,16 @@
 #telas{
 	margin-top: 20px !important;
 }
+
+.btn{
+margin-top: 20px;
+
+}
+
+.texto-claro{
+	color: white;
+}
+
+#tela-save{
+display: none;	
+}

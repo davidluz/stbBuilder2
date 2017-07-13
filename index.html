@@ -1,130 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-<title>STB Builder 2</title>
+<meta charset="UTF-8">
+<title>HCBuilder: HTML5 Course Builder</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 
-<div id="ri-container">
-	<div id="container-de-modelos" class="containers">
-		<div id="modelo0" class="modelos" data-tela-modelo="0"><img src="imgs/m0_small.png"></div>
-		<div id="modelo1" class="modelos" data-tela-modelo="1"><img src="imgs/m1_small.png"></div>
-		<div id="modelo2" class="modelos" data-tela-modelo="2"><img src="imgs/m2_small.png"></div>
-		<div id="modelo3" class="modelos" data-tela-modelo="3"><img src="imgs/m3_small.png"></div>
-		<div id="modelo4" class="modelos" data-tela-modelo="4"><img src="imgs/m4_small.png"></div>
-		<div id="modelo5" class="modelos" data-tela-modelo="5"><img src="imgs/m5_small.png"></div>
-		<div id="modelo6" class="modelos" data-tela-modelo="6"><img src="imgs/m6_small.png"></div>
-		<div id="modelo7" class="modelos" data-tela-modelo="7"><img src="imgs/m7_small.png"></div>
-		<div id="modelo8" class="modelos" data-tela-modelo="8"><img src="imgs/m8_small.png"></div>
-		<div id="modelo9" class="modelos" data-tela-modelo="9"><img src="imgs/m9_small.png"></div>
-		<div id="modelo10" class="modelos" data-tela-modelo="10"><img src="imgs/m10_small.png"></div>
-		<div id="modelo11" class="modelos" data-tela-modelo="11"><img src="imgs/m11_small.png"></div>
-		<div id="modelo12" class="modelos" data-tela-modelo="12"><img src="imgs/m12_small.png"></div>
-		<div id="modelo13" class="modelos" data-tela-modelo="13"><img src="imgs/m13_small.png"></div>
-		<div id="modelo14" class="modelos" data-tela-modelo="14"><img src="imgs/m14_small.png"></div>
-		<div id="modelo15" class="modelos" data-tela-modelo="15"><img src="imgs/m15_small.png"></div>
-		<div id="modelo16" class="modelos" data-tela-modelo="16"><img src="imgs/m16_small.png"></div>
-		<div id="modelo17" class="modelos" data-tela-modelo="17"><img src="imgs/m17_small.png"></div>
-		<div id="modelo18" class="modelos" data-tela-modelo="18"><img src="imgs/m18_small.png"></div>
-		<div id="modelo19" class="modelos" data-tela-modelo="19"><img src="imgs/m19_small.png"></div>
-		<div id="modelo20" class="modelos" data-tela-modelo="20"><img src="imgs/m20_small.png"></div>
-		<div id="modelo21" class="modelos" data-tela-modelo="21"><img src="imgs/m21_small.png"></div>
-		<div id="modelo22" class="modelos" data-tela-modelo="22"><img src="imgs/m22_small.png"></div>
-		<div id="modelo23" class="modelos" data-tela-modelo="23"><img src="imgs/m23_small.png"></div>
-		<div id="modelo24" class="modelos" data-tela-modelo="24"><img src="imgs/m24_small.png"></div>
-	</div>
+                      
+<button id="novo-projeto" class="waves-effect waves-light btn">Novo Projeto</button><br>
+<button id="continua-projeto" class="waves-effect waves-light btn">Continuar uma edição</button><br>
+<button id="gera-de-mapa" class="waves-effect waves-light btn">Gerar a partir de um Mapa</button>
 
-	<div id="container-de-telas" class="containers">
-		<div id="tela-miniatura-1" class="telas-miniatura"></div>
-		<div id="tela-miniatura-2" class="telas-miniatura"></div>
-		<div id="tela-miniatura-3" class="telas-miniatura"></div>
-		<div id="tela-miniatura-4" class="telas-miniatura"></div>
-		<div id="tela-miniatura-5" class="telas-miniatura"></div>
-		<div id="tela-miniatura-6" class="telas-miniatura"></div>
-		<div id="tela-miniatura-7" class="telas-miniatura"></div>
-		<div id="tela-miniatura-8" class="telas-miniatura"></div>
-		<div id="tela-miniatura-9" class="telas-miniatura"></div>
-		<div id="tela-miniatura-10" class="telas-miniatura"></div>
-		<div id="tela-miniatura-11" class="telas-miniatura"></div>
-		<div id="tela-miniatura-12" class="telas-miniatura"></div>
-		<div id="tela-miniatura-13" class="telas-miniatura"></div>
-		<div id="tela-miniatura-14" class="telas-miniatura"></div>
-		<div id="tela-miniatura-15" class="telas-miniatura"></div>
-		<div id="tela-miniatura-16" class="telas-miniatura"></div>
-		<div id="tela-miniatura-17" class="telas-miniatura"></div>
-		<div id="tela-miniatura-18" class="telas-miniatura"></div>
-		<div id="tela-miniatura-19" class="telas-miniatura"></div>
-		<div id="tela-miniatura-20" class="telas-miniatura"></div>
-		<div id="tela-miniatura-21" class="telas-miniatura"></div>
-		<div id="tela-miniatura-22" class="telas-miniatura"></div>
-		<div id="tela-miniatura-23" class="telas-miniatura"></div>
-		<div id="tela-miniatura-24" class="telas-miniatura"></div>
-	</div>
-
-		<div id="container-de-telas-conteudo" class="containers">
-		<div id="tela-conteudo-1" class="conteudos-telas">teste</div>
-		<div id="tela-conteudo-2" class="conteudos-telas"></div>
-		<div id="tela-conteudo-3" class="conteudos-telas"></div>
-		<div id="tela-conteudo-4" class="conteudos-telas"></div>
-		<div id="tela-conteudo-5" class="conteudos-telas"></div>
-		<div id="tela-conteudo-6" class="conteudos-telas"></div>
-		<div id="tela-conteudo-7" class="conteudos-telas"></div>
-		<div id="tela-conteudo-8" class="conteudos-telas"></div>
-		<div id="tela-conteudo-9" class="conteudos-telas"></div>
-		<div id="tela-conteudo-10" class="conteudos-telas"></div>
-		<div id="tela-conteudo-11" class="conteudos-telas"></div>
-		<div id="tela-conteudo-12" class="conteudos-telas"></div>
-		<div id="tela-conteudo-13" class="conteudos-telas"></div>
-		<div id="tela-conteudo-14" class="conteudos-telas"></div>
-		<div id="tela-conteudo-15" class="conteudos-telas"></div>
-		<div id="tela-conteudo-16" class="conteudos-telas"></div>
-		<div id="tela-conteudo-17" class="conteudos-telas"></div>
-		<div id="tela-conteudo-18" class="conteudos-telas"></div>
-		<div id="tela-conteudo-19" class="conteudos-telas"></div>
-		<div id="tela-conteudo-20" class="conteudos-telas"></div>
-		<div id="tela-conteudo-21" class="conteudos-telas"></div>
-		<div id="tela-conteudo-22" class="conteudos-telas"></div>
-		<div id="tela-conteudo-23" class="conteudos-telas"></div>
-		<div id="tela-conteudo-24" class="conteudos-telas"></div>
-	</div>
-		
-</div>
-<button id="salvar-json">Salvar</button>
-
-
+<p>v.0.1 (Última atualização: 13/07/2017)</p>
 
 </body>
-<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
+
+<style>
+	body{
+		background-color: #212C3A;
+	}
+</style>
 	
-<!-- Dependencias CaptiEdson Se possível remover as de SCO depois-->
-    <link rel="stylesheet" href="plugins/captiedson/bootstrap/css/bootstrap.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="plugins/captiedson/estilos.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="plugins/captiedson/simulacao.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="plugins/captiedson/animacoes.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="plugins/captiedson/animacoes-evento.min.css" type="text/css" media="all" />
-    <script src="plugins/captiedson/bootstrap/js/bootstrap.min.js"></script>
-	<script src="plugins/captiedson/APIWrapper.min.js"></script>
-    <script src="plugins/captiedson/SCOFunctions.min.js"></script>
-    <script src="plugins/captiedson/script.min.js"></script>
-    <script src="plugins/captiedson/configuracoes.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Fim das dependências -->
-
-    
-	<script src="js/FileSaver.js"></script>
-	<script src="js/jquery.wordexport.js"></script>
 
 	<script src="js/materialize.min.js"></script>
 	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="js/db.js"></script>
+    	<script src="js/main.js"></script>
     
     <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	
-    <script src="js/builder.js"></script>
-    <script src="js/htmlToJson.js"></script>
 
 
 </html>
