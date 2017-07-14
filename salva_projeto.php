@@ -2,8 +2,8 @@
  
 $teste = json_decode($_POST['temp'], true);
 
-
-echo ($teste['1']['modelo']);
+// Pega o modelo da tela 0
+echo ($teste['0']['modelo']);
 
 /*
 try {

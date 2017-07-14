@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HCBuilder: HTML5 Course Builder</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div class="center-div">   
+<div id="center-div-content">
+<center>      
+<h3>HTML5 Fast Course Builder</h3> 
+<button id="novo-projeto" class="waves-effect waves-light btn blue darken-4">Novo Projeto</button><br>
+<button id="continua-projeto" class="waves-effect waves-light btn blue darken-4">Continuar uma edição</button><br>
+<button id="gera-de-mapa" class="waves-effect waves-light btn blue darken-4">Gerar a partir de um Mapa</button>
+<p>v.0.1 (Última atualização: 13/07/2017)</p>
+</center>
+</div>
+
+</div>
+
+
+
+<div id="form_inicial">
+	<h4>Dados iniciais</h4>
+
+	
+
+	<label class="">Número da demanda:</label> <input type="text" name="numero-demanda" value=""><br>
+	<label class="">Nome do curso:</label> <input type="text" name="nome-curso" value=""><br>
+	<label class="">Módulo Nº:</label> <input type="text" name="numero-modulo" value=""><br>
+	<label class="">Modelo:</label>
+    
+    <select id="modelo_de_projeto">
+	<option value="1">Abertura</option>
+  	<option value="2">Intermediário</option>
+  	<option value="3">Fechamento</option>
+  	<option value="4">Vazio</option>
+  	</select>
+    
+
+	<button id="volta_inicio" class="btn waves-effect waves-light">Voltar</button>
+	<button id="inicia_projeto" class="btn waves-effect waves-light">Começar!</button>
+  	</div><br><br>
+
+
+
+
+</body>
+
+<style>
+body{
+	background-image: url("../storyboard-builder2/imgs/bg1.jpeg");
+	background-repeat: no-repeat;
+	max-width: 100%;
+}
+
+</style>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
+
+	<script src="js/materialize.min.js"></script>
+	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="js/db.js"></script>
+    	<script src="js/main.js"></script>
+    
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	
+
+
+</html>

@@ -1,11 +1,9 @@
 
 
-
+//
 
 function exportToJsonFile(jsonData) {
 
-
-  
     let dataStr = JSON.stringify(jsonData);
     let dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
     
@@ -17,7 +15,4 @@ function exportToJsonFile(jsonData) {
     linkElement.click();
 }
 
-$("#salvar-json").click(function(){
- var moduloCompleto = JSON.stringify(telas);    
-exportToJsonFile(telas);
-});
+

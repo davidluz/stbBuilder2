@@ -1,3 +1,6 @@
+// Funções de DB
+
+
 function gravar(){
 
 var temp = JSON.stringify(telas);
@@ -9,6 +12,6 @@ var temp = JSON.stringify(telas);
             success: function(data){
                    alert(data);
             }
-
-});
+		});
 }
+

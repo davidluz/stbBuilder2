@@ -1,22 +1,64 @@
+$.ajaxSetup({cache: false});
+
+// Variáveis globais do projeto
+var projeto = {};
+projeto.nome    = 'vazio';
+projeto.numero  = 'vazio';
+projeto.modulo  = 'vazio'; 
+
+
+    
+    
+$( "#modelo_de_projeto option:selected" ).text();
+
+
+function pegarDataAtual(){
+var currentdate = new Date(); 
+var datetime =   currentdate.getDate() + "/" 
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " - "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+return datetime;
+}
+
+
+
+$('select').material_select();
+
+
+
+// Ação de todos os botões do projeto
+$("#inicia_projeto").click(function(){
+projeto.nome    = $("input[name='nome-curso']").val();
+projeto.numero  = $("input[name='numero-demanda']").val();
+projeto.modulo  = $("input[name='numero-modulo']").val(); 
+projeto.dataInicio = pegarDataAtual();
+});
+
 $("#novo-projeto").click(function(){
 
-  $.fancybox({
-        'href':'#tela-save',
-        'width' : '50%',
-        'height' :'50%',
+ $.fancybox({
+        'href':'#form_inicial',
+        'width' : '100%',
+        'height' :'100%',
         'titleShow'  : false,
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+        'closeClick'  : false, 
      helpers : { 
             overlay : {
                 closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
+            } 
         }
-    });  
+    });     
+
+window.open("builder.html","_self");
 
 });
+
 
 $("#continua-projeto").click(function(){
 
@@ -28,11 +70,11 @@ $("#continua-projeto").click(function(){
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+        'closeClick'  : false, 
      helpers : { 
             overlay : {
                 closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
+            } 
         }
     });  
 
@@ -48,11 +90,11 @@ $("#gera-de-mapa").click(function(){
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+        'closeClick'  : false, 
      helpers : { 
             overlay : {
                 closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
+            } 
         }
     });  
 
@@ -68,11 +110,11 @@ $("#exporta-doc").click(function(){
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+        'closeClick'  : false, 
      helpers : { 
             overlay : {
                 closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
+            } 
         }
     });  
 
@@ -80,21 +122,7 @@ $("#exporta-doc").click(function(){
 
 $("#exporta-json").click(function(){
 
-  $.fancybox({
-        'href':'#tela-save',
-        'width' : '50%',
-        'height' :'50%',
-        'titleShow'  : false,
-        'transitionIn'  : 'elastic',
-        'transitionOut' : 'elastic',
-        'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
-     helpers : { 
-            overlay : {
-                closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
-        }
-    });  
+exportToJsonFile(telas); 
 
 });
 
@@ -108,11 +136,11 @@ $("#exporta-html").click(function(){
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+        'closeClick'  : false, 
      helpers : { 
             overlay : {
                 closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
+            } 
         }
     });  
 
@@ -128,11 +156,11 @@ $("#exporta-scorm").click(function(){
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+        'closeClick'  : false, 
      helpers : { 
             overlay : {
                 closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
+            } 
         }
     });  
 
@@ -148,11 +176,11 @@ $("#conta-telas").click(function(){
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+        'closeClick'  : false, 
      helpers : { 
             overlay : {
                 closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
+            } 
         }
     });  
 
@@ -168,11 +196,11 @@ $("#conta-caracteres").click(function(){
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+        'closeClick'  : false, 
      helpers : { 
             overlay : {
                 closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
+            } 
         }
     });  
 
@@ -188,11 +216,11 @@ $("#gera-briefing").click(function(){
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+        'closeClick'  : false, 
      helpers : { 
             overlay : {
                 closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
+            } 
         }
     });  
 
@@ -200,21 +228,8 @@ $("#gera-briefing").click(function(){
 
 $("#voltar-home").click(function(){
 
-  $.fancybox({
-        'href':'#tela-save',
-        'width' : '50%',
-        'height' :'50%',
-        'titleShow'  : false,
-        'transitionIn'  : 'elastic',
-        'transitionOut' : 'elastic',
-        'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
-     helpers : { 
-            overlay : {
-                closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
-        }
-    });  
+window.open("home.html","_self");
+
 
 });
 
@@ -231,21 +246,22 @@ $("#salvar-projeto").click(function(){
         'transitionIn'  : 'elastic',
         'transitionOut' : 'elastic',
         'autoSize' : false,
-        'closeClick'  : false, // prevents closing when clicking INSIDE fancybox
+        'closeClick'  : false, 
      helpers : { 
             overlay : {
                 closeClick: false
-            } // prevents closing when clicking OUTSIDE fancybox
+            } 
         }
     });  
 
 });
+
 
 $("#salvar-no-banco").click(function(){
 
 gravar();
 
 });
-
+// Fim dos botões de ação do projeto
 
 

@@ -1,16 +1,20 @@
 
+$('select').material_select();
+// Responsável pela lógica de produção das telas
+
 //Cria um modelo dinamico para as 30 telas 
 telas = [];
-for(i=1; i<30; i++){
+for(i=1; i<=30; i++){
   telas[i] = new Tela(i);
 }
 
 //Gera uma tela 0
 telas[0] = new Tela(0);
-telas[0].modelo ="kkkk";
+
 //Gera as demais telas
 function Tela(numero) {
-this.numero = numero;
+this.projeto = "vazio";  
+this.numero = "numero";
 this.modelo ="vazio";
 this.tipo ="vazio";
 this.componente1 = "vazio";
@@ -92,6 +96,9 @@ $(".telas-miniatura").click(function(){
             overlay : {
                 closeClick: false
             } // prevents closing when clicking OUTSIDE fancybox
+        },
+        afterClose: function() {
+         atualizaTelas();    
         }
     });
     return false;
@@ -99,8 +106,45 @@ $(".telas-miniatura").click(function(){
 }
 
 
+function atualizaTelas(){
 
 
-$('select').material_select();
+   
+for(i=1; i<=30; i++){
+
+var telaAtual = "#tela-conteudo-"+i;
+
+//Só guarda modelo se a página existir
+var modelo = $(telaAtual).find(".html-modelos").attr("id");
+
+if(modelo==!"undefined"){
+
+var modelo2 = modelo.substring(11,12);  
+telas[i].modelo = modelo;
+
+}
+
+
+telas[i].componente1 =  $(telaAtual).find("#componente1").html();
+telas[i].componente2 =  $(telaAtual).find("#componente2").html();
+telas[i].componente3 =  $(telaAtual).find("#componente3").html();
+telas[i].componente4 =  $(telaAtual).find("#componente4").html();
+telas[i].componente5 =  $(telaAtual).find("#componente5").html();
+telas[i].orientacoes =  $(telaAtual).find("#orientacoes").html();
+telas[i].descricaoIMG = $(telaAtual).find("#descricaoIMG").html();
+telas[i].img1 = $(telaAtual).find("#img1").html();
+telas[i].img2 = $(telaAtual).find("#img2").html();
+telas[i].img3 = $(telaAtual).find("#img3").html();
+telas[i].img4 = $(telaAtual).find("#img4").html();
+telas[i].img5 = $(telaAtual).find("#img5").html();
+telas[i].audio = $(telaAtual).find("#audio").html();
+
+}
+
+console.log(telas[1].modelo);
+console.log("array telas atualizado!");
+
+}
+
 
 
