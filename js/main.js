@@ -1,15 +1,22 @@
+
+
+
+
+var projeto = {};
+projeto.nome = 'vazio';
+projeto.demanda = 'vazio';
+projeto.modulo = 'vazio';
+projeto.dataInicio = pegarDataAtual();
+projeto.atualizadaOuNova = 'vazio';
+
+
 $.ajaxSetup({cache: false});
 
 // Variáveis globais do projeto
-var projeto = {};
-projeto.nome    = 'vazio';
-projeto.numero  = 'vazio';
-projeto.modulo  = 'vazio'; 
 
 
-    
-    
-$( "#modelo_de_projeto option:selected" ).text();
+   
+
 
 
 function pegarDataAtual(){
@@ -25,45 +32,36 @@ return datetime;
 
 
 
+
+
 $('select').material_select();
 
 
+$("#acesso-menu4").click(function(){
 
-// Ação de todos os botões do projeto
-$("#inicia_projeto").click(function(){
-projeto.nome    = $("input[name='nome-curso']").val();
-projeto.numero  = $("input[name='numero-demanda']").val();
-projeto.modulo  = $("input[name='numero-modulo']").val(); 
-projeto.dataInicio = pegarDataAtual();
+$("#console").toggle();
+console.log("console iniciado");
 });
 
 $("#novo-projeto").click(function(){
 
- $.fancybox({
-        'href':'#form_inicial',
-        'width' : '100%',
-        'height' :'100%',
-        'titleShow'  : false,
-        'transitionIn'  : 'elastic',
-        'transitionOut' : 'elastic',
-        'autoSize' : false,
-        'closeClick'  : false, 
-     helpers : { 
-            overlay : {
-                closeClick: false
-            } 
-        }
-    });     
-
 window.open("builder.html","_self");
 
+});
+
+$("#salva_dados_projeto").click(function() {
+
+projeto.nome = $("#nome-curso").val();
+projeto.demanda = $("#numero-demanda").val();
+projeto.modulo = $("#numero-modulo").val();
+$.fancybox.close();
 });
 
 
 $("#continua-projeto").click(function(){
 
   $.fancybox({
-        'href':'#tela-save',
+        'href':'#continuar_projeto_menu',
         'width' : '50%',
         'height' :'50%',
         'titleShow'  : false,
@@ -102,21 +100,7 @@ $("#gera-de-mapa").click(function(){
 
 $("#exporta-doc").click(function(){
 
-  $.fancybox({
-        'href':'#tela-save',
-        'width' : '50%',
-        'height' :'50%',
-        'titleShow'  : false,
-        'transitionIn'  : 'elastic',
-        'transitionOut' : 'elastic',
-        'autoSize' : false,
-        'closeClick'  : false, 
-     helpers : { 
-            overlay : {
-                closeClick: false
-            } 
-        }
-    });  
+exportToWordFile();
 
 });
 
@@ -233,6 +217,41 @@ window.open("home.html","_self");
 
 });
 
+$("#debug").click(function(){
+
+debugarTelas();
+
+});
+
+$("#atualiza-debug").click(function(){
+
+debugarTelas();
+
+});
+
+
+$("#acesso-menu1").click(function(){
+
+  $.fancybox({
+        'href':'#form_inicial',
+        'width' : '90%',
+        'height' :'90%',
+        'titleShow'  : false,
+        'transitionIn'  : 'elastic',
+        'transitionOut' : 'elastic',
+        'autoSize' : false,
+        'closeClick'  : false, 
+     helpers : { 
+            overlay : {
+                closeClick: false
+            } 
+        }
+    }); 
+
+});
+
+
+
 
 
 
@@ -263,5 +282,12 @@ gravar();
 
 });
 // Fim dos botões de ação do projeto
+
+ $('.button-collapse').sideNav({
+
+      onOpen: function() {  alert("abriu");  },  
+      onClose: function() {  alert("fechou");  } 
+    }
+  );
 
 

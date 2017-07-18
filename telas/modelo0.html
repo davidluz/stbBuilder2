@@ -11,31 +11,14 @@
             	<article class="tela escura entrada" data-tempo-tela-mudo="1000" data-tempo-tela="15000" data-grupo="Módulo 1 - A projeção de receita">
                     <div class="fundo fundo-curso-056 box-imagem efeitos entrada-porbaixo-perspectiva saida-porbaixo-perspectiva entrada-duracao-500 saida-duracao-500 
                     saida-atraso-250">
-                        <img src="imagens/056_M1_Tela_1_318471329.jpg" style="opacity: 0.5;">
+                        <img src="galeria/modelos/tela0fundo.jpg" style="opacity: 0.5;">
                     </div>
                     <div class="bloco-para-verticalizar">
                         <div class="bloco-verticalizado texto-centralizado espaco-lateral">
-                            <h3 class="efeitos 
-                            entrada-peladireita-elastico 
-                            entrada-duracao-500 
-							entrada-atraso-250
-                            saida-pelaesquerda-elastico 
-                            saida-duracao-250
-                            sem-espacos-verticais" contenteditable="true" id="componente1">Bem-vindo ao curso						
+                            <h3 class="sem-espacos-verticais" contenteditable="true" id="componente1">Bem-vindo ao curso						
     						</h3>
-                            <h3 class="texto-maior efeitos 
-                            entrada-pelaesquerda-elastico 
-                            entrada-duracao-500 
-							entrada-atraso-500							
-                            saida-peladireita-elastico 
-                            saida-duracao-500 
-                            sem-espacos-verticais" contenteditable="true" id="componente2">As finanças de seu negócio estão estruturadas?</h3>
-                            <p class=" efeitos 
-                            entrada-peladireita-elastico 
-                            entrada-duracao-500 
-							entrada-atraso-750							
-                            saida-pelaesquerda-elastico 
-                            saida-duracao-250" contenteditable="true" id="componente3">
+                            <h3 class=" sem-espacos-verticais" contenteditable="true" id="componente2">As finanças de seu negócio estão estruturadas?</h3>
+                            <p class="contenteditable="true" id="componente3">
                            	Com este curso, você vai compreender os aspectos e os indicadores financeiros que ajudam a manter as finanças de seu negócio estruturadas.</p>
                         </div>
                     </div>
@@ -51,11 +34,11 @@
     <div ><p id="informacoes"></p> </div>
 
     
-    <div id="orientacoes">
+    <div id="rodape">
         <p><strong>Orientações Gerais:</strong></p>
-        <p contenteditable="true"  id="componente4">1. Aplicar diagramação padrão de tela de abertura de curso.</p>
+        <p contenteditable="true"  id="orientacoes">1. Aplicar diagramação padrão de tela de abertura de curso.</p>
            <p><strong>Descrição das imagens:</strong></p>
-        <p contenteditable="true"  id="componente5">2. Referência - <i>Shutterstock</i> ID:</p>
+        <p contenteditable="true"  id="descricaoIMG">2. Imagem de referência - <i>Shutterstock</i> ID:</p>
          <p><strong>Carregar imagem de fundo:</strong></p>
           
         
@@ -75,3 +58,8 @@
       $('select').material_select();
     </script>
 </div>   
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>

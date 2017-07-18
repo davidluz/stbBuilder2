@@ -8,16 +8,16 @@
 
 <div id="ri-container">
 	<div id="container-de-modelos" class="containers">
-		<div id="modelo0" class="modelos" data-tela-modelo="0"><img src="imgs/m0_small.png"></div>
-		<div id="modelo1" class="modelos" data-tela-modelo="1"><img src="imgs/m1_small.png"></div>
-		<div id="modelo2" class="modelos" data-tela-modelo="2"><img src="imgs/m2_small.png"></div>
-		<div id="modelo3" class="modelos" data-tela-modelo="3"><img src="imgs/m3_small.png"></div>
-		<div id="modelo4" class="modelos" data-tela-modelo="4"><img src="imgs/m4_small.png"></div>
-		<div id="modelo5" class="modelos" data-tela-modelo="5"><img src="imgs/m5_small.png"></div>
-		<div id="modelo6" class="modelos" data-tela-modelo="6"><img src="imgs/m6_small.png"></div>
-		<div id="modelo7" class="modelos" data-tela-modelo="7"><img src="imgs/m7_small.png"></div>
-		<div id="modelo8" class="modelos" data-tela-modelo="8"><img src="imgs/m8_small.png"></div>
-		<div id="modelo9" class="modelos" data-tela-modelo="9"><img src="imgs/m9_small.png"></div>
+		<div id="modelo0"  class="modelos" data-tela-modelo="0"><img src="imgs/m0_small.png"></div>
+		<div id="modelo1"  class="modelos" data-tela-modelo="1"><img src="imgs/m1_small.png"></div>
+		<div id="modelo2"  class="modelos" data-tela-modelo="2"><img src="imgs/m2_small.png"></div>
+		<div id="modelo3"  class="modelos" data-tela-modelo="3"><img src="imgs/m3_small.png"></div>
+		<div id="modelo4"  class="modelos" data-tela-modelo="4"><img src="imgs/m4_small.png"></div>
+		<div id="modelo5"  class="modelos" data-tela-modelo="5"><img src="imgs/m5_small.png"></div>
+		<div id="modelo6"  class="modelos" data-tela-modelo="6"><img src="imgs/m6_small.png"></div>
+		<div id="modelo7"  class="modelos" data-tela-modelo="7"><img src="imgs/m7_small.png"></div>
+		<div id="modelo8"  class="modelos" data-tela-modelo="8"><img src="imgs/m8_small.png"></div>
+		<div id="modelo9"  class="modelos" data-tela-modelo="9"><img src="imgs/m9_small.png"></div>
 		<div id="modelo10" class="modelos" data-tela-modelo="10"><img src="imgs/m10_small.png"></div>
 		<div id="modelo11" class="modelos" data-tela-modelo="11"><img src="imgs/m11_small.png"></div>
 		<div id="modelo12" class="modelos" data-tela-modelo="12"><img src="imgs/m12_small.png"></div>
@@ -93,29 +93,61 @@
 
 <div class="bloco-para-verticalizar">
 <div class="bloco-verticalizado texto-centralizado espaco-lateral">
-<button id="salvar-projeto" class="waves-effect waves-light btn">Salvar Projeto</button>
-<button id="exporta-doc" class="waves-effect waves-light btn">Exportar Storyboard (.doc)</button>
-<button id="exporta-json" class="waves-effect waves-light btn">Exportar JSON</button>
-<button id="exporta-html" class="waves-effect waves-light btn">Exportar HTML</button>
-<button id="exporta-scorm" class="waves-effect waves-light btn">Exportar SCORM</button>
-<button id="conta-telas" class="waves-effect waves-light btn">Contar telas</button>
-<button id="conta-caracteres" class="waves-effect waves-light btn">Contar caracteres e imagens</button>
-<button id="gera-briefing" class="waves-effect waves-light btn">Briefing de Imagens</button>
-<button id="voltar-home" class="waves-effect waves-light btn">Voltar</button>
+<button id="salvar-projeto" class="waves-effect waves-light btn deep-orange lighten-1">Salvar Projeto</button>
+<button id="exporta-doc" class="waves-effect waves-light btn deep-orange lighten-1">Exportar Storyboard (.doc)</button>
+<button id="exporta-json" class="waves-effect waves-light btn deep-orange lighten-1">Exportar JSON</button>
+<button id="exporta-html" class="waves-effect waves-light btn deep-orange lighten-1">Exportar HTML</button>
+<button id="exporta-scorm" class="waves-effect waves-light btn deep-orange lighten-1">Exportar SCORM</button>
+<button id="conta-telas" class="waves-effect waves-light btn deep-orange lighten-1">Contar telas</button>
+<button id="conta-caracteres" class="waves-effect waves-light btn deep-orange lighten-1">Contar caracteres e imagens</button>
+<button id="gera-briefing" class="waves-effect waves-light btn deep-orange lighten-1">Briefing de Imagens</button>
+<button id="voltar-home" class="waves-effect waves-light btn deep-orange lighten-1">Voltar</button>
 </div>
 </div>
 
 <div id="tela-save">
 <h3>Salvar</h3>
-	<p>Digite um nome para salvar seu projeto:</p>
-	<input type="text" name="nomeDoProjeto"><br>
-	<button class="waves-effect waves-light btn" id="salvar-no-banco">Salvar</button>
+<p>Digite um nome para salvar seu projeto:</p>
+<input type="text" name="nomeDoProjeto"><br>
+<button class="waves-effect waves-light btn" id="salvar-no-banco">Salvar</button>
 </div>
+
+<div id="console"><p>MODO DESENVOLVEDOR ATIVADO</p><button id="atualiza-debug">Atualizar</button><div id="conteudo-debug"></div></div>
+<div id="stb-final"></div>
+
+<ul id="slide-out" class="side-nav">
+      <li><h3 class="center-align blue darken-4">Opções</h3></li>
+      <li><a href="#" id="acesso-menu1" class="center-align">Dados do projeto</a></li>
+      <li><a href="#" id="acesso-menu2" class="center-align">Instruções de uso</a></li>
+      <li><a href="#" id="acesso-menu3" class="center-align">Reportar um problema</a></li>
+      <li><a href="#" id="acesso-menu4" class="center-align">Modo Desenvolvedor</a></li>
+</ul>
+
+<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons" id="icon-hamburger"><img src="imgs/menu-hamburger.png"></i></a>
+
+
+<div id="form_inicial">
+
+    <h4>Dados do Projeto</h4>
+	<label class="">Nome do curso:</label> <input type="text" id="nome-curso" value=""><br>
+	<label class="">Número da demanda:</label> <input type="text" id="numero-demanda" value=""><br>
+	<label class="">Módulo Nº:</label> <input type="text" id="numero-modulo" value=""><br>
+	<label class="">Biblioteca de Modelos:</label>
+    <select id="modelo_de_projeto">
+	<option value="1">Padrão Sebrae</option>
+	<option value="1">Recursos Interativos</option>
+	<option value="1">Moodle (Storyboards apenas)</option>
+  	</select>
+	<button id="salva_dados_projeto" class="btn waves-effect waves-light">Salvar e Fechar</button>
+  	</div>
+
+
 
 </body>
 <script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<link rel="stylesheet" href="css/materialize.min.css">
+
 <!-- Dependencias CaptiEdson Se possível remover as de SCO depois-->
     <link rel="stylesheet" href="plugins/captiedson/bootstrap/css/bootstrap.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="plugins/captiedson/estilos.min.css" type="text/css" media="all" />
@@ -128,16 +160,21 @@
     <script src="plugins/captiedson/script.min.js"></script>
     <script src="plugins/captiedson/configuracoes.js"></script>
 
+
+
     <link rel="stylesheet" href="css/style.css">
     <!-- Fim das dependências -->
 
     
 	<script src="js/FileSaver.js"></script>
 	<script src="js/jquery.wordexport.js"></script>
+	<script src="js/htmlToDoc.js"></script>
 	<script src="js/materialize.min.js"></script>
 	<script src="plugins/fancybox/jquery.fancybox.js"></script>
 	<script src="js/main.js"></script>
     <script src="js/db.js"></script>
+    <script src="js/debug.js"></script>
+
     <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
 	
 	

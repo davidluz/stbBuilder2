@@ -3,7 +3,7 @@
 //
 
 function exportToJsonFile(jsonData) {
-
+atualizaTelas();
     let dataStr = JSON.stringify(jsonData);
     let dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
     
