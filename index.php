@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,7 +67,7 @@ body{
 	<script src="js/materialize.min.js"></script>
 	<script src="plugins/fancybox/jquery.fancybox.js"></script>
 	<script src="js/db.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/buttons.js"></script>
     
     <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/materialize.min.css">

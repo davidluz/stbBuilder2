@@ -3,7 +3,8 @@ $(".button-collapse").sideNav();
 
 
 $(document).ready(function () {
-        $.fancybox({
+
+         $.fancybox({
              'href': "#form_inicial",
         'width' : '100%',
         'height' :'100%',

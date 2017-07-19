@@ -1,7 +1,3 @@
-
-
-
-
 var projeto = {};
 projeto.nome = 'vazio';
 projeto.demanda = 'vazio';
@@ -45,7 +41,7 @@ console.log("console iniciado");
 
 $("#novo-projeto").click(function(){
 
-window.open("builder.html","_self");
+window.open("builder.php","_self");
 
 });
 
@@ -212,7 +208,7 @@ $("#gera-briefing").click(function(){
 
 $("#voltar-home").click(function(){
 
-window.open("home.html","_self");
+window.open("index.php","_self");
 
 
 });
@@ -291,3 +287,5 @@ gravar();
   );
 
 
+
+        
