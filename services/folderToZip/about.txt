@@ -1,0 +1,3 @@
+Recebe o endereço de um Folder
+Salva uma pasta zip no servidor 
+Retorna a URL desta pasta para download

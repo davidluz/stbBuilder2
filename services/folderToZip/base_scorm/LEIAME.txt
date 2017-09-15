@@ -1,0 +1,13 @@
+Este pacote concentra todos os arquivos necessários para criação de um curso SEBRAE.
+
+As pastas "imagens" e "img-slick" servem para testar o arquivo "testes2017.html", que contém páginas com galeria e imageMap.
+No pacote de um curso essas pastas não são necessárias, nem o arquivo testes2017.html.
+
+O arquivo "default-vazio.html" possui links de css e js comentados (desabilitados). São arquivos sobre galeria, imageMap, zoom, e pops. Para usá-los basta retirar os comentários.
+
+O mesmo acontece no arquivos "carregar.js". Para usar os novos recursos de galeria, zoom, imagemMap e pops, deve-se retirar os comentários do código.
+
+Neste novo pacote, foram minificados todos os arquivos js e css utilizados, portanto se for utilizado nos cursos já em andamento será preciso alterar nomes de script e css nas páginas html.
+
+Quando este pacote for usado em curso, favor testar antes no Moodle para chegar se não houve algum erro no processo de minificação dos arquivos. Qualquer comportamento diferente do esperado nos conteúdos deve ser reportado para verificação das minificações.
+

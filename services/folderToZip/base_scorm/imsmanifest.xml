@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.6 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-5A908619D3E0F0C5B7809CB690F02A8F" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="ORG-2566811B70C909CD2453C5A67C2C6614">
+    <organization identifier="ORG-2566811B70C909CD2453C5A67C2C6614" structure="hierarchical">
+      <title>Organization</title>
+      <item identifier="ITEM-E39FF89B4610B35A37C7811B3941409F" isvisible="true" identifierref="RES-6B8B9DBACA47DA40598A47683E9DFBFF">
+        <title>TESTE RAPID LEARNING</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-6B8B9DBACA47DA40598A47683E9DFBFF" type="webcontent" href="fluxocaixa.html" adlcp:scormtype="sco">
+      <file href="fluxocaixa.html" />
+      <file href="estilos.css" />
+      <file href="simulacao.css" />
+      <file href="script.js" />
+      <file href="animacoes.css" />
+      <file href="estilos-customizados.css" />
+    </resource>
+    <resource identifier="RES-967542BBE441411CCAA4DB8827FD1912" type="webcontent" href="img/bg-retornos.png">
+      <file href="img/bg-retornos.png" />
+    </resource>
+    <resource identifier="RES-F341CC29B3041E7E433BAF0834D0C43E" type="webcontent" href="img/moviesstock.jpg">
+      <file href="img/moviesstock.jpg" />
+    </resource>
+    <resource identifier="RES-7A2727C89EA6158CE21A9FD46884E4BB" type="webcontent" href="img/video-poster-sebrae.jpg">
+      <file href="img/video-poster-sebrae.jpg" />
+    </resource>
+    <resource identifier="RES-2E68DC818D0357E971FF69FF0239F216" type="webcontent" href="m1-audios/001.16.m1.tela1.1.mp3">
+      <file href="m1-audios/001.16.m1.tela1.1.mp3" />
+    </resource>
+    <resource identifier="RES-5F078B51670B5188F40D70AF09C4C2D4" type="webcontent" href="m1-audios/001.16.m1.tela10.1.mp3">
+      <file href="m1-audios/001.16.m1.tela10.1.mp3" />
+    </resource>
+    <resource identifier="RES-49F37016DAAB6537C3227A31AA50853C" type="webcontent" href="m1-audios/001.16.m1.tela11.1.mp3">
+      <file href="m1-audios/001.16.m1.tela11.1.mp3" />
+    </resource>
+    <resource identifier="RES-55D37FB6727AE63B431C8AA2B388E9EF" type="webcontent" href="m1-audios/001.16.m1.tela11.2.mp3">
+      <file href="m1-audios/001.16.m1.tela11.2.mp3" />
+    </resource>
+    <resource identifier="RES-3E1DDC235B235969817C611A595AC87C" type="webcontent" href="m1-audios/001.16.m1.tela11.3.mp3">
+      <file href="m1-audios/001.16.m1.tela11.3.mp3" />
+    </resource>
+    <resource identifier="RES-9BAA0D91ABF69A655C62AF1D4EB8617D" type="webcontent" href="m1-audios/001.16.m1.tela11.4.mp3">
+      <file href="m1-audios/001.16.m1.tela11.4.mp3" />
+    </resource>
+    <resource identifier="RES-3D9692D57BABF5551A0711C311EDF5BD" type="webcontent" href="m1-audios/001.16.m1.tela12.1.mp3">
+      <file href="m1-audios/001.16.m1.tela12.1.mp3" />
+    </resource>
+    <resource identifier="RES-C9F36611202C2E6D75D04B3EF2DD761C" type="webcontent" href="m1-audios/001.16.m1.tela12.2.mp3">
+      <file href="m1-audios/001.16.m1.tela12.2.mp3" />
+    </resource>
+    <resource identifier="RES-94CEE0FF3B1756494FDF0714D38F9001" type="webcontent" href="m1-audios/001.16.m1.tela13.1.mp3">
+      <file href="m1-audios/001.16.m1.tela13.1.mp3" />
+    </resource>
+    <resource identifier="RES-D5162D424F353ADE7D6D12C3EE72792C" type="webcontent" href="m1-audios/001.16.m1.tela13.1.teste.mp3">
+      <file href="m1-audios/001.16.m1.tela13.1.teste.mp3" />
+    </resource>
+    <resource identifier="RES-B466884B9604CA7510C2A7A840B93DD3" type="webcontent" href="m1-audios/001.16.m1.tela13.2.mp3">
+      <file href="m1-audios/001.16.m1.tela13.2.mp3" />
+    </resource>
+    <resource identifier="RES-6F1B45CE248AFCF751B133C6AAC95051" type="webcontent" href="m1-audios/001.16.m1.tela13.3.mp3">
+      <file href="m1-audios/001.16.m1.tela13.3.mp3" />
+    </resource>
+    <resource identifier="RES-7E53017B6DD9CC1B7C5F4391DA478F6B" type="webcontent" href="m1-audios/001.16.m1.tela13.4.mp3">
+      <file href="m1-audios/001.16.m1.tela13.4.mp3" />
+    </resource>
+    <resource identifier="RES-7443D8D44B2EC74247BB4535B537AA5F" type="webcontent" href="m1-audios/001.16.m1.tela13.5.mp3">
+      <file href="m1-audios/001.16.m1.tela13.5.mp3" />
+    </resource>
+    <resource identifier="RES-2766DCA028F28561192F98662E69DD84" type="webcontent" href="m1-audios/001.16.m1.tela2.1.mp3">
+      <file href="m1-audios/001.16.m1.tela2.1.mp3" />
+    </resource>
+    <resource identifier="RES-460A41E83904487B64640CFEF2F03851" type="webcontent" href="m1-audios/001.16.m1.tela2.2.mp3">
+      <file href="m1-audios/001.16.m1.tela2.2.mp3" />
+    </resource>
+    <resource identifier="RES-00757FF7784FF2FF0EDFE8ACAE04BDEC" type="webcontent" href="m1-audios/001.16.m1.tela3.1.mp3">
+      <file href="m1-audios/001.16.m1.tela3.1.mp3" />
+    </resource>
+    <resource identifier="RES-E02477D49B1BDC86DA71E2E479B0A7A9" type="webcontent" href="m1-audios/001.16.m1.tela3.2.mp3">
+      <file href="m1-audios/001.16.m1.tela3.2.mp3" />
+    </resource>
+    <resource identifier="RES-EB1D9BC69DE49185C9E9949454D92325" type="webcontent" href="m1-audios/001.16.m1.tela3.3.mp3">
+      <file href="m1-audios/001.16.m1.tela3.3.mp3" />
+    </resource>
+    <resource identifier="RES-5E10E7A1358E2C07DC46EF70F128B260" type="webcontent" href="m1-audios/001.16.m1.tela4.1.mp3">
+      <file href="m1-audios/001.16.m1.tela4.1.mp3" />
+    </resource>
+    <resource identifier="RES-78C9FB98C1450CF270B05ED74820C7DC" type="webcontent" href="m1-audios/001.16.m1.tela4.2.mp3">
+      <file href="m1-audios/001.16.m1.tela4.2.mp3" />
+    </resource>
+    <resource identifier="RES-E0A427947492517EA04A1F0F75D7DAA1" type="webcontent" href="m1-audios/001.16.m1.tela4.3.mp3">
+      <file href="m1-audios/001.16.m1.tela4.3.mp3" />
+    </resource>
+    <resource identifier="RES-F6AB6E961118200DC1DDE6AC87F7CF50" type="webcontent" href="m1-audios/001.16.m1.tela4.4.mp3">
+      <file href="m1-audios/001.16.m1.tela4.4.mp3" />
+    </resource>
+    <resource identifier="RES-ACEF518917D827FEBDB552BC7A525579" type="webcontent" href="m1-audios/001.16.m1.tela5.1.mp3">
+      <file href="m1-audios/001.16.m1.tela5.1.mp3" />
+    </resource>
+    <resource identifier="RES-4D124944575F19624087F38F59A274B6" type="webcontent" href="m1-audios/001.16.m1.tela5.2.mp3">
+      <file href="m1-audios/001.16.m1.tela5.2.mp3" />
+    </resource>
+    <resource identifier="RES-84832AEBF29B924899653F3F28041697" type="webcontent" href="m1-audios/001.16.m1.tela5.3.mp3">
+      <file href="m1-audios/001.16.m1.tela5.3.mp3" />
+    </resource>
+    <resource identifier="RES-183594663D5E5D9F09BA6128D112DFCC" type="webcontent" href="m1-audios/001.16.m1.tela5.4.mp3">
+      <file href="m1-audios/001.16.m1.tela5.4.mp3" />
+    </resource>
+    <resource identifier="RES-A9DE1D59202F9AF16FA4DACAFF647DC8" type="webcontent" href="m1-audios/001.16.m1.tela5.5.mp3">
+      <file href="m1-audios/001.16.m1.tela5.5.mp3" />
+    </resource>
+    <resource identifier="RES-3B6A81949F6A446F6B8A10AA6DDF3994" type="webcontent" href="m1-audios/001.16.m1.tela6.1.mp3">
+      <file href="m1-audios/001.16.m1.tela6.1.mp3" />
+    </resource>
+    <resource identifier="RES-D77E7E012587FD0C3B7593BB47E347BE" type="webcontent" href="m1-audios/001.16.m1.tela7.1.mp3">
+      <file href="m1-audios/001.16.m1.tela7.1.mp3" />
+    </resource>
+    <resource identifier="RES-CA4E8193C1356109FFB898BD26409B89" type="webcontent" href="m1-audios/001.16.m1.tela7.2.mp3">
+      <file href="m1-audios/001.16.m1.tela7.2.mp3" />
+    </resource>
+    <resource identifier="RES-C926C50809C25A3B15A90D1456F3B513" type="webcontent" href="m1-audios/001.16.m1.tela7.3.mp3">
+      <file href="m1-audios/001.16.m1.tela7.3.mp3" />
+    </resource>
+    <resource identifier="RES-13D9A0A7F920AB1929AAD9143E6273A9" type="webcontent" href="m1-audios/001.16.m1.tela8.1.mp3">
+      <file href="m1-audios/001.16.m1.tela8.1.mp3" />
+    </resource>
+    <resource identifier="RES-27BB190EA2F049C4CD25A980BCCC99F9" type="webcontent" href="m1-audios/001.16.m1.tela8.2.mp3">
+      <file href="m1-audios/001.16.m1.tela8.2.mp3" />
+    </resource>
+    <resource identifier="RES-AAC9CD34A752A4C7D1B7519C744C4CFE" type="webcontent" href="m1-audios/001.16.m1.tela9.1.mp3">
+      <file href="m1-audios/001.16.m1.tela9.1.mp3" />
+    </resource>
+    <resource identifier="RES-8CF048058B61CEA695E1FF578DDC5E46" type="webcontent" href="m1-audios/001.16.m1.tela9.2.mp3">
+      <file href="m1-audios/001.16.m1.tela9.2.mp3" />
+    </resource>
+    <resource identifier="RES-83094C7818314B36EECA8E787976011C" type="webcontent" href="simulacao/simula1.jpg">
+      <file href="simulacao/simula1.jpg" />
+    </resource>
+    <resource identifier="RES-D11C1D17594F057062B51874C196721B" type="webcontent" href="simulacao/simula2.jpg">
+      <file href="simulacao/simula2.jpg" />
+    </resource>
+    <resource identifier="RES-6D6D815200666684F9B7FD3ECC9DADD3" type="webcontent" href="simulacao/tela1.jpg">
+      <file href="simulacao/tela1.jpg" />
+    </resource>
+    <resource identifier="RES-2EF8760F1A68579B9B0161115887122D" type="webcontent" href="simulacao/tela2.jpg">
+      <file href="simulacao/tela2.jpg" />
+    </resource>
+    <resource identifier="RES-555253CB819407C9C82D85A7AC1AF8DA" type="webcontent" href="simulacao/tela3.jpg">
+      <file href="simulacao/tela3.jpg" />
+    </resource>
+    <resource identifier="RES-503B0C0351F67A4AFCAC60CD548CC0FB" type="webcontent" href="simulacao/tela4.jpg">
+      <file href="simulacao/tela4.jpg" />
+    </resource>
+    <resource identifier="RES-7EAA9A8D25161E6E07B7A02583C82AFF" type="webcontent" href="simulacao/tela5c.jpg">
+      <file href="simulacao/tela5c.jpg" />
+    </resource>
+    <resource identifier="RES-3776E86E4988CDBA3A9E4D1145397F78" type="webcontent" href="simulacao/tela5e.jpg">
+      <file href="simulacao/tela5e.jpg" />
+    </resource>
+    <resource identifier="RES-9EAD6A30EC800E5B7D608F91124DD905" type="webcontent" href="simulacao/telacheia.png">
+      <file href="simulacao/telacheia.png" />
+    </resource>
+    <resource identifier="RES-4B79E78D567F37CCE937529453DF85C7" type="webcontent" href="animacoes.css">
+      <file href="animacoes.css" />
+    </resource>
+    <resource identifier="RES-018F9FDB2736F5A1212F1178658F95C1" type="webcontent" href="estilos-customizados.css">
+      <file href="estilos-customizados.css" />
+      <file href="img/moviesstock.jpg" />
+      <file href="materiais/img_iniciar2_curso_fluxo_caixa.png" />
+      <file href="materiais/img_tutorial.png" />
+    </resource>
+    <resource identifier="RES-2F8FED0973D87C66B5F091553D400FC0" type="webcontent" href="estilos.css">
+      <file href="estilos.css" />
+    </resource>
+    <resource identifier="RES-5A7EAD17B764A032DF2AF536EC38F416" type="webcontent" href="script.js">
+      <file href="script.js" />
+    </resource>
+    <resource identifier="RES-9EA69E9245B616DB7B543E3FF1EC9EB4" type="webcontent" href="simulacao.css">
+      <file href="simulacao.css" />
+    </resource>
+  </resources>
+</manifest>
+
