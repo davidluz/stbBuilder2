@@ -1,11 +1,13 @@
 <?php
-function geraScorm(){
+
+// Diretório a ser zipado e destino chega via chamada AJAX
+folderToZip($_POST['directoryToZip'],$_POST['outputDir']);
+
+function folderToZip($directoryToZip,$outputDir){
+
 $fileToZip="License.txt";
 $fileToZip1="CreateZipFileMac.inc.php";
 $fileToZip2="CreateZipFile.inc.php";
-$directoryToZip="base_scorm"; // This will zip all the file(s) in this present working directory
-$outputDir="/"; //Replace "/" with the name of the desired output directory.
-
 include_once("CreateZipFile.inc.php");
 $createZipFile=new CreateZipFile;
 $createZipFile->zipDirectory($directoryToZip,$outputDir);
@@ -17,6 +19,6 @@ fclose($fd);
 //@unlink($zipName);
 }
 
-geraScorm();
+
 
 ?>

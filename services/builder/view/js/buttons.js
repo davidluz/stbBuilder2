@@ -114,10 +114,11 @@ htmlToHTML(fileName, 'stb-final','text/html');
 
 $("#exporta-scorm").click(function(){
 
-
+// Faz uma requisição AJAX ao serviço que Gera o ZIP (Scorm), envia o diretório a ser zipado e o destino do zip
 $.ajax({
   type: "POST",
-  url: 'http:../services/folderToZip/ScormPack.php',
+  url: '../../folderToZip/ScormPack.php',
+  data: ({directoryToZip: 'base_scorm',outputDir: '/' }),
   success: alert('deu certo.')
 });
 
